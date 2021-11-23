@@ -45,12 +45,12 @@ describe("Passing Number", () => {
         expect(passingNumber(644891, 11)).toBe(36399);
     })
 
-    describe("Time Efficiency Challenge - Part 1", () => {
+    describe.skip("Time Efficiency Challenge - Part 1", () => {
 
         // THIS TEST CASE BELOW IS TO SEE IF YOU WILL PASS THE LATER TESTS ---
         // IF YOU FAIL THIS ONE AND TRY THE OTHERS, YOU WILL BE WAITING A VERY LONG TIME!!!!!
 
-        test.only("Can solve large numbers within a 6 second time limit", () => {
+        test("Can solve large numbers within a 6 second time limit", () => {
             const start = new Date();
             expect(passingNumber(100000, 7)).toBe(50000);
             expect(new Date() - start).toBeLessThan(100);
@@ -60,9 +60,9 @@ describe("Passing Number", () => {
             expect(new Date() - start).toBeLessThan(6000);
         })
 
-        describe("Time & Memory Efficiency Challenge - Part 2!", () => {
+        describe.skip("Time & Memory Efficiency Challenge - Part 2!", () => {
 
-            test.only("Can solve ultra large numbers within a 6 second time limit", () => {
+            test("Can solve ultra large numbers within a 6 second time limit", () => {
                 const start = new Date();
                 expect(passingNumber(601711, 131)).toBe(2812)
                 expect(new Date() - start).toBeLessThan(100);
